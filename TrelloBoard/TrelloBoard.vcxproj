@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -88,6 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\C++\Trello-Board-Telerik-Academy\TrelloBoard;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,7 +140,45 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ActivityHistory.cpp" />
+    <ClCompile Include="AssignableItemBase.cpp" />
+    <ClCompile Include="Bug.cpp" />
+    <ClCompile Include="BugStatus.cpp" />
+    <ClCompile Include="Feedback.cpp" />
+    <ClCompile Include="FeedBackStatus.cpp" />
+    <ClCompile Include="PriorityType.cpp" />
+    <ClCompile Include="Severity.cpp" />
+    <ClCompile Include="Size.cpp" />
+    <ClCompile Include="StoryStatus.cpp" />
     <ClCompile Include="TrelloBoard.cpp" />
+    <ClCompile Include="TrelloBoardEngine.cpp" />
+    <ClCompile Include="TrelloBoardRepository.cpp" />
+    <ClCompile Include="WorkItemBase.cpp" />
+    <ClCompile Include="WorkItemTypes.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ActivityHistory.h" />
+    <ClInclude Include="AdvanceStatus.h" />
+    <ClInclude Include="Assignable.h" />
+    <ClInclude Include="Board.h" />
+    <ClInclude Include="Bug.h" />
+    <ClInclude Include="BugStatus.h" />
+    <ClInclude Include="Command.h" />
+    <ClInclude Include="Constants.h" />
+    <ClInclude Include="EnumTemplate.h" />
+    <ClInclude Include="Feedback.h" />
+    <ClInclude Include="FeedBackStatus.h" />
+    <ClInclude Include="Team.h" />
+    <ClInclude Include="Story.h" />
+    <ClInclude Include="Member.h" />
+    <ClInclude Include="PriorityType.h" />
+    <ClInclude Include="Severity.h" />
+    <ClInclude Include="Size.h" />
+    <ClInclude Include="Status.h" />
+    <ClInclude Include="StoryStatus.h" />
+    <ClInclude Include="Validator.h" />
+    <ClInclude Include="WorkItem.h" />
+    <ClInclude Include="WorkItemTypes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

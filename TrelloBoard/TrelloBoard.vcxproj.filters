@@ -13,10 +13,162 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\commands">
+      <UniqueIdentifier>{4efb84b5-d3fc-40cb-aa73-6caa2b8f7ddf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\commands\changeWorkItem">
+      <UniqueIdentifier>{22a1c59b-516b-4793-9c00-a88ca1194021}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core">
+      <UniqueIdentifier>{46b9dd11-707d-4a57-8510-2e95726d98ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\models">
+      <UniqueIdentifier>{3a337dba-a7ba-4f6c-ad77-b0b07f736ffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\commands">
+      <UniqueIdentifier>{df8f29d0-194e-4571-a71b-b170428d7d34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core">
+      <UniqueIdentifier>{2b59ef1d-db1f-447d-9665-dd02f08960d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\models">
+      <UniqueIdentifier>{ef439e52-4187-4702-badc-d44435c7e8b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\models\common">
+      <UniqueIdentifier>{090f63b6-ce97-458d-87d5-9f75d619c45b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\models\contracts">
+      <UniqueIdentifier>{18c36b06-f499-4e63-b43c-7a760b6fd0f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\models\workitems">
+      <UniqueIdentifier>{3eed655d-c76a-42ca-a694-7b1da8d8324f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\models\common\enums">
+      <UniqueIdentifier>{f61cce0b-5154-463d-bd5e-92cd7af88038}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\models\contracts">
+      <UniqueIdentifier>{37f30dd6-2078-43e0-afd4-31060392f680}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\models\common">
+      <UniqueIdentifier>{5dd47b20-1626-487f-a37c-c9f740006029}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\models\common\enums">
+      <UniqueIdentifier>{e867548e-6b77-4dbf-a61a-6da8bd4fa269}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TrelloBoard.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="TrelloBoardRepository.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="BugStatus.cpp">
+      <Filter>Source Files\models\common\enums</Filter>
+    </ClCompile>
+    <ClCompile Include="TrelloBoardEngine.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="FeedBackStatus.cpp">
+      <Filter>Source Files\models\common\enums</Filter>
+    </ClCompile>
+    <ClCompile Include="PriorityType.cpp">
+      <Filter>Source Files\models\common\enums</Filter>
+    </ClCompile>
+    <ClCompile Include="Severity.cpp">
+      <Filter>Source Files\models\common\enums</Filter>
+    </ClCompile>
+    <ClCompile Include="Size.cpp">
+      <Filter>Source Files\models\common\enums</Filter>
+    </ClCompile>
+    <ClCompile Include="StoryStatus.cpp">
+      <Filter>Source Files\models\common\enums</Filter>
+    </ClCompile>
+    <ClCompile Include="WorkItemTypes.cpp">
+      <Filter>Source Files\models\common\enums</Filter>
+    </ClCompile>
+    <ClCompile Include="WorkItemBase.cpp">
+      <Filter>Source Files\models\workitems</Filter>
+    </ClCompile>
+    <ClCompile Include="Feedback.cpp">
+      <Filter>Source Files\models\workitems</Filter>
+    </ClCompile>
+    <ClCompile Include="Bug.cpp">
+      <Filter>Source Files\models\workitems</Filter>
+    </ClCompile>
+    <ClCompile Include="AssignableItemBase.cpp">
+      <Filter>Source Files\models\workitems</Filter>
+    </ClCompile>
+    <ClCompile Include="ActivityHistory.cpp">
+      <Filter>Source Files\models</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AdvanceStatus.h">
+      <Filter>Header Files\commands\changeWorkItem</Filter>
+    </ClInclude>
+    <ClInclude Include="Command.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Status.h">
+      <Filter>Header Files\models\contracts</Filter>
+    </ClInclude>
+    <ClInclude Include="WorkItemTypes.h">
+      <Filter>Header Files\models\common\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="BugStatus.h">
+      <Filter>Header Files\models\common\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumTemplate.h">
+      <Filter>Header Files\models\common\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Size.h">
+      <Filter>Header Files\models\common\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="PriorityType.h">
+      <Filter>Header Files\models\common\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Severity.h">
+      <Filter>Header Files\models\common\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="FeedBackStatus.h">
+      <Filter>Header Files\models\common\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="StoryStatus.h">
+      <Filter>Header Files\models\common\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Constants.h">
+      <Filter>Header Files\models\common</Filter>
+    </ClInclude>
+    <ClInclude Include="ActivityHistory.h">
+      <Filter>Header Files\models\contracts</Filter>
+    </ClInclude>
+    <ClInclude Include="Assignable.h">
+      <Filter>Header Files\models\contracts</Filter>
+    </ClInclude>
+    <ClInclude Include="Board.h">
+      <Filter>Header Files\models\contracts</Filter>
+    </ClInclude>
+    <ClInclude Include="Bug.h">
+      <Filter>Header Files\models\contracts</Filter>
+    </ClInclude>
+    <ClInclude Include="Feedback.h">
+      <Filter>Header Files\models\contracts</Filter>
+    </ClInclude>
+    <ClInclude Include="Member.h">
+      <Filter>Header Files\models\contracts</Filter>
+    </ClInclude>
+    <ClInclude Include="Story.h">
+      <Filter>Header Files\models\contracts</Filter>
+    </ClInclude>
+    <ClInclude Include="Team.h">
+      <Filter>Header Files\models\contracts</Filter>
+    </ClInclude>
+    <ClInclude Include="WorkItem.h">
+      <Filter>Header Files\models\contracts</Filter>
+    </ClInclude>
+    <ClInclude Include="Validator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
